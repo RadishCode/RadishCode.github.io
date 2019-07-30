@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>post · 萝卜的博客</title>
+    <title>坦克大战-第一天 · 萝卜的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >Radish&#39;s Blog</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">post</a>
+                <a href="#" class="post-name">坦克大战-第一天</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            post
+            坦克大战-第一天
             <!-- 404 -->
             
         </h1>
@@ -266,7 +266,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">4</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">258</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -395,7 +395,20 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="你好世界"><a href="#你好世界" class="headerlink" title="你好世界"></a>你好世界</h2>
+        <h1 id="第一天"><a href="#第一天" class="headerlink" title="第一天"></a>第一天</h1><h2 id="创建一个游戏窗口"><a href="#创建一个游戏窗口" class="headerlink" title="创建一个游戏窗口"></a>创建一个游戏窗口</h2><ul>
+<li>新建一个GameFrame窗口类（单例设计模式）</li>
+<li>设置游戏窗口的属性（长、宽、高、背景颜色、位置等）</li>
+<li>给窗口一个画笔，进行绘制图形</li>
+<li>在窗口画一个图形进行测试</li>
+<li>将画笔交给坦克对象</li>
+</ul>
+<hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 游戏的窗口</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    1):向外暴露自己的实例对象</span></span><br><span class="line"><span class="comment">    2):得到显卡的画笔</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GameFrame</span> <span class="keyword">extends</span> <span class="title">Frame</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 创建该类的私有化静态对象</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> GameFrame instance = <span class="keyword">new</span> GameFrame();</span><br><span class="line">    <span class="comment">// 私有化构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">GameFrame</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">// 初始化窗口数据</span></span><br><span class="line">        <span class="keyword">this</span>.setTitle(<span class="string">"Tank War"</span>); <span class="comment">// 窗口标题</span></span><br><span class="line">        <span class="keyword">this</span>.setLocation(<span class="number">600</span>, <span class="number">200</span>);<span class="comment">// 窗口位置</span></span><br><span class="line">        <span class="keyword">this</span>.setSize(<span class="number">800</span>, <span class="number">600</span>);<span class="comment">// 窗口大小</span></span><br><span class="line">	<span class="keyword">this</span>.setVisible(<span class="keyword">true</span>); <span class="comment">// 显示窗口</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="comment">// 1):向外暴露自己的实例对象</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> GameFrame <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="comment">// 2):得到显卡的画笔</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(Graphics g)</span> </span>&#123;</span><br><span class="line">       g.fillRect(<span class="number">100</span>, <span class="number">100</span>, <span class="number">50</span>, <span class="number">50</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="主方法获取窗口实例对象"><a href="#主方法获取窗口实例对象" class="headerlink" title="主方法获取窗口实例对象"></a>主方法获取窗口实例对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">maiN</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 获取窗口的实例对象</span></span><br><span class="line">        GameFrame.getInstance();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h2><p><img src="/images/frame.jpg" alt></p>
+
     </article>
     <!-- license  -->
     
@@ -403,17 +416,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/07/30/good/" title= "good">
-                    <div class="nextTitle">good</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/28/你好/" title= "你好">
-                    <div class="prevTitle">你好</div>
+                <a href= "/2019/07/30/坦克大战/" title= "坦克大战">
+                    <div class="prevTitle">坦克大战</div>
                 </a>
             
         </li>
@@ -554,7 +562,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#你好世界"><span class="toc-number">1.</span> <span class="toc-text">你好世界</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一天"><span class="toc-number">1.</span> <span class="toc-text">第一天</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一个游戏窗口"><span class="toc-number">1.1.</span> <span class="toc-text">创建一个游戏窗口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主方法获取窗口实例对象"><span class="toc-number">1.1.1.</span> <span class="toc-text">主方法获取窗口实例对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#输出结果"><span class="toc-number">1.2.</span> <span class="toc-text">输出结果</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -594,29 +602,9 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 5
+        Total : 3
         </div>
         <!-- search  -->
         
@@ -632,22 +620,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/tile/" >tile</a>
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/坦克大战-第一天/" >坦克大战-第一天</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/post/" >post</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/good/" >good</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/你好/" >你好</a>
+            <span class="archive-post-date">07/30</span><a class="archive-post-title" href= "/2019/07/30/坦克大战/" >坦克大战</a>
         </li>
     
     
@@ -659,6 +637,8 @@ top:50vh;
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
