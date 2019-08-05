@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>萝卜的博客</title>
+    <title>坦克大战-第四天 · 萝卜的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Radish&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">坦克大战-第四天</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Radish's Blog</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            坦克大战-第四天
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">476</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/08/04</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,203 +399,74 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/04/坦克大战-第四天/" >
-            
-                <span>坦克大战-第四天</span>
-        </a>
-        <div class="abstract-content">
-            敌方坦克   1.增加了敌方坦克的随机运动和随机发射子弹,使用了Random类    2.在游戏窗口类中,新增一个成员变量为List enemyTanks = new Arraylist&lt;&gt;(),用于存放多个敌方坦克对象    3.增加了坦克越界的边界检查,如果坦克的位置出界就把位置赋值为老的位置
-123456789// 在Direction枚举对象中,增加随机方向的方法public enum Direction &#123;    UP, DOWN, LEFT, RIGHT;        private static Random rand = new Random();...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="敌方坦克"><a href="#敌方坦克" class="headerlink" title="敌方坦克"></a>敌方坦克</h2><p>   1.增加了敌方坦克的随机运动和随机发射子弹,使用了Random类<br>    2.在游戏窗口类中,新增一个成员变量为List<tank> enemyTanks = new Arraylist&lt;&gt;(),用于存放多个敌方坦克对象<br>    3.增加了坦克越界的边界检查,如果坦克的位置出界就把位置赋值为老的位置</tank></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在Direction枚举对象中,增加随机方向的方法</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Direction &#123;</span><br><span class="line">    UP, DOWN, LEFT, RIGHT;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Random rand = <span class="keyword">new</span> Random();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Direction <span class="title">randomDir</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> values()[rand.nextInt(values().length)];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在敌方坦克类(Tank)中加入随机方法的方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Random rand = <span class="function">New <span class="title">Random</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">setDirection</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rand.nextInt(<span class="number">100</span>) &gt; <span class="number">95</span>)&#123; <span class="comment">// 当随机数大于95时再随机设置方式</span></span><br><span class="line">        <span class="keyword">this</span>.direction = Direction.randomDir();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在游戏窗口类中增加List </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 存放敌方坦克对象</span></span><br><span class="line">List&lt;Tank&gt; enemyTanks = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"><span class="comment">// 监听键盘的Y按键, 当按键Y抬起时</span></span><br><span class="line"><span class="comment">// add(new Tank(200, 200 , Direction.randomDir, ,Group.Bad));</span></span><br></pre></td></tr></table></figure>
+
+<p>增加边界检测</p>
+<ul>
+<li>当坦克出界是, 使上步位置赋值给现在的位置, 在进行绘制坦克<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">boundsCheck</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x &lt; <span class="number">0</span> || y &lt; <span class="number">30</span> || x + <span class="keyword">this</span>.WIDTH &gt; gf.GAME_WIDTH || y + <span class="keyword">this</span>.HEIGHT &gt; gf.GAME_HEIGHT) &#123;</span><br><span class="line">        <span class="keyword">this</span>.x =<span class="keyword">this</span>.oldX;</span><br><span class="line">        <span class="keyword">this</span>.y = <span class="keyword">this</span>.oldY;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 将此方法加入坦克类的move()方法的最下方</span></span><br><span class="line"><span class="comment">// 5):根据方向一直移动</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.oldX = x;</span><br><span class="line">    <span class="keyword">this</span>.oldY = y; </span><br><span class="line">		</span><br><span class="line">    setDirection();</span><br><span class="line">    <span class="keyword">switch</span> (direction) &#123;</span><br><span class="line">    <span class="keyword">case</span> UP:</span><br><span class="line">        y -= SPEED;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> DOWN:</span><br><span class="line">        y += SPEED;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> RIGHT:</span><br><span class="line">        x += SPEED;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> LEFT:</span><br><span class="line">        x -= SPEED;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    boundsCheck();</span><br><span class="line">    fire();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>随机时刻发出子弹<br>也是使用Random的对象, 和设置方向的方式一样。上方代码已经创建了Random的对象，因此直接使用rand调用nextInt()方法即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 此方法加入move()方法的下方</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">fire</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(rand.nextInt(<span class="number">100</span>) &gt; <span class="number">95</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span>(gf == <span class="keyword">null</span>)&#123;</span><br><span class="line">            gf = GameFrame.getInstance;</span><br><span class="line">        &#125;</span><br><span class="line">        gf.add(<span class="keyword">new</span> Bullet(x, y, direction, group));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="程序运行结果"><a href="#程序运行结果" class="headerlink" title="程序运行结果:"></a>程序运行结果:</h2><p><img src="/images/123.gif" alt></p>
+
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/02/坦克大战-第三天/" >
-            
-                <span>坦克大战-第三天</span>
-        </a>
-        <div class="abstract-content">
-            主要内容增加了按键控制坦克的方向
-监听键盘上下左右按键，进行控制坦克的运行123456789101112131415161718192021222324252627282930313233343536373839404142// 4):设置坦克方向private void setDirection() &#123;    if (!isU &amp;&amp; !isR &amp;&amp; !isL &amp;&amp; !isD) &#123;        isMoving = false;    &#125; else &#123;	isMoving = true;    &#1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/02</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/31/坦克大战-第二天/" >
-            
-                <span>坦克大战-第二天</span>
-        </a>
-        <div class="abstract-content">
-            坦克类的设计创建一个坦克的类
-考虑坦克的属性(位置、方向、速度)
-其中方向采用枚举（上、下、左、右）
-加载坦克的图片
-接受按键的触发，使坦克根据人的控制来动
-
-
-代码实现方向枚举123Enum Direction &#123;    UP, DOWN, LEFE, RIGHT&#125;
-
-图片资源类（例如坦克图片）12345678910111213public class ImagesResource &#123;    public static BufferedImage goodTankU, goodTankD, goodTankR, goodTankL;    static&#...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/坦克大战-第一天/" >
-            
-                <span>坦克大战-第一天</span>
-        </a>
-        <div class="abstract-content">
-            第一天创建一个游戏窗口
-新建一个GameFrame窗口类（单例设计模式）
-设置游戏窗口的属性（长、宽、高、背景颜色、位置等）
-给窗口一个画笔，进行绘制图形
-在窗口画一个图形进行测试
-将画笔交给坦克对象
-
-
-1234567891011121314151617181920212223242526// 游戏的窗口/*    1):向外暴露自己的实例对象    2):得到显卡的画笔*/public class GameFrame extends Frame &#123;    // 创建该类的私有化静态对象    private static final GameFrame instance =...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/坦克大战/" >
-            
-                <span>坦克大战</span>
-        </a>
-        <div class="abstract-content">
-            坦克大战项目的目的
-通过项目建立面向对象的设计思维，并复习OO，容器，网络、线程等基础知识
-
-资料
-1.阿里手册
-2.GUI(不需要深入掌握)
-
-
-项目安排
-1.做一个游戏窗口并显示
-
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-Mo...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/08/02/坦克大战-第三天/" title= "坦克大战-第三天">
+                    <div class="prevTitle">坦克大战-第三天</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NTYyNS8yMjEzNg==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -626,6 +558,24 @@ Mo...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#敌方坦克"><span class="toc-number">1.</span> <span class="toc-text">敌方坦克</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#程序运行结果"><span class="toc-number">2.</span> <span class="toc-text">程序运行结果:</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -819,6 +769,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
