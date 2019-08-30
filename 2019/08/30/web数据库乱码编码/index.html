@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>萝卜的博客</title>
+    <title>web数据库乱码编码 · 萝卜的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Radish&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">web数据库乱码编码</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Radish's Blog</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            web数据库乱码编码
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "编码问题">编码问题</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">197</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/08/30</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,76 +399,70 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/css代码不恰当提示解决/" >
-            
-                <span>css代码不恰当提示解决</span>
-        </a>
-        <div class="abstract-content">
-            css设置web背景图遇见的问题问题
-提示信息
-解释检查发现相似的css内容，它能被简化形式
-问题解决修改代码后：
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="web文本中的乱码问题"><a href="#web文本中的乱码问题" class="headerlink" title="web文本中的乱码问题"></a>web文本中的乱码问题</h1><h2 id="问题简介："><a href="#问题简介：" class="headerlink" title="问题简介："></a>问题简介：</h2><ul>
+<li>从数据库获取学生数据时，中文不会出现乱码。但是当增加数据的时候，会出现乱码。乱码全为？？？</li>
+</ul>
+<h2 id="自我思考："><a href="#自我思考：" class="headerlink" title="自我思考："></a>自我思考：</h2><ul>
+<li>中文乱码和但是英文，数学不会出现乱码。很大程度是字符集的编码问题。</li>
+<li>但是特殊的是：从数据库获取数据不会乱码。当web上增加数据时，就会出现乱码</li>
+<li>检查jsp, java， 数据库表的编码格式都是“utf-8”，这就很难受</li>
+<li>最后想到应该是数据库的问题，想到安装时。数据库默认的字符集时latin1,并没有修改</li>
+<li>于是修改一下，进行测试</li>
+</ul>
+<h2 id="修改字符集"><a href="#修改字符集" class="headerlink" title="修改字符集"></a>修改字符集</h2><ul>
+<li>1.<br><img src="/images/20190830100230978.png" alt></li>
+<li>2.</li>
+<li><img src="/images/20190830100313213.png" alt><h2 id="问题最后解决了"><a href="#问题最后解决了" class="headerlink" title="问题最后解决了"></a>问题最后解决了</h2></li>
+</ul>
 
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-            
-        </div>
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/14/解决banner居中显示问题/" >
-            
-                <span>解决banner居中显示问题</span>
-        </a>
-        <div class="abstract-content">
-            
-地址：
-https://www.cnblogs.com/chenchenhao/p/9889628.html
-在做web界面时，出现了窗口缩放时，banner图片布局中的问题，在博客园找到了解决方法
-大家在做项目的时候有没有遇到一个问题呢    就是一张图片宽度100%    在缩放屏幕的时候图片会被压缩变形！！！那么怎么才能实现图片始终居中而不被压缩变形呢？  接下来让我带领大家解决这个问题   请看代码↓↓↓↓↓↓↓1234567891011121314151617181920212223242526272829303132&lt;style&gt;        .bannerb...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/08/28/NoClassDefFounfError/" title= "NoClassDefFounfError">
+                    <div class="prevTitle">NoClassDefFounfError</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NTYyNS8yMjEzNg==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -499,6 +554,24 @@ https://www.cnblogs.com/chenchenhao/p/9889628.html
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#web文本中的乱码问题"><span class="toc-number">1.</span> <span class="toc-text">web文本中的乱码问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题简介："><span class="toc-number">1.1.</span> <span class="toc-text">问题简介：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自我思考："><span class="toc-number">1.2.</span> <span class="toc-text">自我思考：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改字符集"><span class="toc-number">1.3.</span> <span class="toc-text">修改字符集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题最后解决了"><span class="toc-number">1.4.</span> <span class="toc-text">问题最后解决了</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -808,6 +881,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

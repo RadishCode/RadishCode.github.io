@@ -346,6 +346,50 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/30/web数据库乱码编码/" >
+            
+                <span>web数据库乱码编码</span>
+        </a>
+        <div class="abstract-content">
+            web文本中的乱码问题问题简介：
+从数据库获取学生数据时，中文不会出现乱码。但是当增加数据的时候，会出现乱码。乱码全为？？？
+
+自我思考：
+中文乱码和但是英文，数学不会出现乱码。很大程度是字符集的编码问题。
+但是特殊的是：从数据库获取数据不会乱码。当web上增加数据时，就会出现乱码
+检查jsp, java， 数据库表的编码格式都是“utf-8”，这就很难受
+最后想到应该是数据库的问题，想到安装时。数据库默认的字符集时latin1,并没有修改
+于是修改一下，进行测试
+
+修改字符集
+1.
+2.
+问题最后解决了
+
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/30</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "编码问题">编码问题</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/08/28/NoClassDefFounfError/" >
             
                 <span>NoClassDefFounfError</span>
@@ -636,47 +680,6 @@ fun为函数，time为毫秒
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/坦克大战/" >
-            
-                <span>坦克大战</span>
-        </a>
-        <div class="abstract-content">
-            坦克大战项目的目的
-通过项目建立面向对象的设计思维，并复习OO，容器，网络、线程等基础知识
-
-资料
-1.阿里手册
-2.GUI(不需要深入掌握)
-
-
-项目安排
-1.做一个游戏窗口并显示
-
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
@@ -920,9 +923,14 @@ fun为函数，time为毫秒
     
     
     
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 11
+        Total : 12
         </div>
         <!-- search  -->
         
@@ -935,6 +943,11 @@ fun为函数，time为毫秒
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/30</span><a class="archive-post-title" href= "/2019/08/30/web数据库乱码编码/" >web数据库乱码编码</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -998,9 +1011,11 @@ fun为函数，time为毫秒
     
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
+        <span class="sidebar-tag-name" data-tags="hmtl"><span class="iconfont-archer">&#xe606;</span>hmtl</span>
+    
         <span class="sidebar-tag-name" data-tags="css"><span class="iconfont-archer">&#xe606;</span>css</span>
     
-        <span class="sidebar-tag-name" data-tags="hmtl"><span class="iconfont-archer">&#xe606;</span>hmtl</span>
+        <span class="sidebar-tag-name" data-tags="编码问题"><span class="iconfont-archer">&#xe606;</span>编码问题</span>
     
         <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
