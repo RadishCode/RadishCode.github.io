@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>萝卜的博客</title>
+    <title>JQuery基础笔记 · 萝卜的博客</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Radish&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">JQuery基础笔记</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Radish's Blog</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            JQuery基础笔记
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "JQuery">JQuery</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1.8k</span>阅读时长: <span class="post-count reading-time">7 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/09/07</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,361 +399,214 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/07/JQuery基础笔记/" >
-            
-                <span>JQuery基础笔记</span>
-        </a>
-        <div class="abstract-content">
-            知识点：
-JQuery 基础：1. 概念
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h1><ol>
+<li>JQuery 基础：<pre><code>1. 概念
 2. 快速入门
 3. JQuery对象和JS对象区别与转换
 4. 选择器
 5. DOM操作
-6. 案例
+6. 案例</code></pre></li>
+</ol>
+<h1 id="JQuery-基础："><a href="#JQuery-基础：" class="headerlink" title="JQuery 基础："></a>JQuery 基础：</h1><pre><code>1. 概念： 一个JavaScript框架。简化JS开发
+    * jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨    是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优    化HTML文档操作、事件处理、动画设计和Ajax交互。
 
-JQuery 基础：1. 概念： 一个JavaScript框架。简化JS开发
-    * jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨    是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优    ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "JQuery">JQuery</a>
-    
-</div>
-            
-        </div>
+    * JavaScript框架：本质上就是一些js文件，封装了js的原生代码而已
+2. 快速入门
+    1. 步骤：
+        1. 下载JQuery
+            * 目前jQuery有三个大版本：
+                1.x：兼容ie678,使用最为广泛的，官方只做BUG维护，
+                     功能不再新增。因此一般项目来说，使用1.x版本就可以了，
+                     最终版本：1.12.4 (2016年5月20日)
+                2.x：不兼容ie678，很少有人使用，官方只做BUG维护，
+                     功能不再新增。如果不考虑兼容低版本的浏览器可以使用2.x，
+                     最终版本：2.2.4 (2016年5月20日)
+                3.x：不兼容ie678，只支持最新的浏览器。除非特殊要求，
+                     一般不会使用3.x版本的，很多老的jQuery插件不支持这个版本。
+                     目前该版本是官方主要更新维护的版本。最新版本：3.2.1（2017年3月20日）
+            * jquery-xxx.js 与 jquery-xxx.min.js区别：
+                1. jquery-xxx.js：开发版本。给程序员看的，有良好的缩进和注释。体积大一些
+                2. jquery-xxx.min.js：生产版本。程序中使用，没有缩进。体积小一些。程序加载更快
+
+        2. 导入JQuery的js文件：导入min.js文件
+        3. 使用
+            var div1 = $(&quot;#div1&quot;);
+               alert(div1.html());
+
+
+3. JQuery对象和JS对象区别与转换
+    1. JQuery对象在操作时，更加方便。
+    2. JQuery对象和js对象方法不通用的.
+    3. 两者相互转换
+        * jq -- &gt; js : jq对象[索引] 或者 jq对象.get(索引)
+        * js -- &gt; jq : $(js对象)
+
+
+4. 选择器：筛选具有相似特征的元素(标签)
+
+    1. 基本操作学习：
+        1. 事件绑定
+            //1.获取b1按钮
+            $(&quot;#b1&quot;).click(function(){
+                alert(&quot;abc&quot;);
+            });
+        2. 入口函数
+             $(function () {
+
+                });
+             window.onload  和 $(function) 区别
+                 * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+                 * $(function)可以定义多次的。
+        3. 样式控制：css方法
+             // $(&quot;#div1&quot;).css(&quot;background-color&quot;,&quot;red&quot;);
+              $(&quot;#div1&quot;).css(&quot;backgroundColor&quot;,&quot;pink&quot;);
+
+
+    2. 分类
+        1. 基本选择器
+            1. 标签选择器（元素选择器）
+                * 语法： $(&quot;html标签名&quot;) 获得所有匹配标签名称的元素
+            2. id选择器 
+                * 语法： $(&quot;#id的属性值&quot;) 获得与指定id属性值匹配的元素
+            3. 类选择器
+                * 语法： $(&quot;.class的属性值&quot;) 获得与指定的class属性值匹配的元素
+            4. 并集选择器：
+                * 语法： $(&quot;选择器1,选择器2....&quot;) 获取多个选择器选中的所有元素
+        2. 层级选择器
+            1. 后代选择器
+                * 语法： $(&quot;A B &quot;) 选择A元素内部的所有B元素        
+            2. 子选择器
+                * 语法： $(&quot;A &gt; B&quot;) 选择A元素内部的所有B子元素
+        3. 属性选择器
+            1. 属性名称选择器 
+                * 语法： $(&quot;A[属性名]&quot;) 包含指定属性的选择器
+            2. 属性选择器
+                * 语法： $(&quot;A[属性名=&apos;值&apos;]&quot;) 包含指定属性等于指定值的选择器
+            3. 复合属性选择器
+                * 语法： $(&quot;A[属性名=&apos;值&apos;][]...&quot;) 包含多个属性条件的选择器
+        4. 过滤选择器
+            1. 首元素选择器 
+                * 语法： :first 获得选择的元素中的第一个元素
+            2. 尾元素选择器 
+                * 语法： :last 获得选择的元素中的最后一个元素
+            3. 非元素选择器
+                * 语法： :not(selector) 不包括指定内容的元素
+            4. 偶数选择器
+                * 语法： :even 偶数，从 0 开始计数
+            5. 奇数选择器
+                * 语法： :odd 奇数，从 0 开始计数
+            6. 等于索引选择器
+                * 语法： :eq(index) 指定索引元素
+            7. 大于索引选择器 
+                * 语法： :gt(index) 大于指定索引元素
+            8. 小于索引选择器 
+                * 语法： :lt(index) 小于指定索引元素
+            9. 标题选择器
+                * 语法： :header 获得标题（h1~h6）元素，固定写法
+        5. 表单过滤选择器
+            1. 可用元素选择器 
+                * 语法： :enabled 获得可用元素
+            2. 不可用元素选择器 
+                * 语法： :disabled 获得不可用元素
+            3. 选中选择器 
+                * 语法： :checked 获得单选/复选框选中的元素
+            4. 选中选择器 
+                * 语法： :selected 获得下拉框选中的元素
+
+5. DOM操作
+    1. 内容操作
+        1. html(): 获取/设置元素的标签体内容   &lt;a&gt;&lt;font&gt;内容&lt;/font&gt;&lt;/a&gt;  --&gt; &lt;font&gt;内容&lt;/font&gt;
+        2. text(): 获取/设置元素的标签体纯文本内容   &lt;a&gt;&lt;font&gt;内容&lt;/font&gt;&lt;/a&gt; --&gt; 内容
+        3. val()： 获取/设置元素的value属性值
+    2. 属性操作
+        1. 通用属性操作
+            1. attr(): 获取/设置元素的属性
+            2. removeAttr():删除属性
+            3. prop():获取/设置元素的属性
+            4. removeProp():删除属性
+
+            * attr和prop区别？
+                1. 如果操作的是元素的固有属性，则建议使用prop
+                2. 如果操作的是元素自定义的属性，则建议使用attr
+        2. 对class属性操作
+            1. addClass():添加class属性值
+            2. removeClass():删除class属性值
+            3. toggleClass():切换class属性
+                * toggleClass(&quot;one&quot;): 
+                    * 判断如果元素对象上存在class=&quot;one&quot;，则将属性值one删除掉。  如果元素对象上不存在class=&quot;one&quot;，则添加
+            4. css():
+    3. CRUD操作:
+        1. append():父元素将子元素追加到末尾
+            * 对象1.append(对象2): 将对象2添加到对象1元素内部，并且在末尾
+        2. prepend():父元素将子元素追加到开头
+            * 对象1.prepend(对象2):将对象2添加到对象1元素内部，并且在开头
+        3. appendTo():
+            * 对象1.appendTo(对象2):将对象1添加到对象2内部，并且在末尾
+        4. prependTo()：
+            * 对象1.prependTo(对象2):将对象1添加到对象2内部，并且在开头
+
+
+        5. after():添加元素到元素后边
+            * 对象1.after(对象2)： 将对象2添加到对象1后边。对象1和对象2是兄弟关系
+        6. before():添加元素到元素前边
+            * 对象1.before(对象2)： 将对象2添加到对象1前边。对象1和对象2是兄弟关系
+        7. insertAfter()
+            * 对象1.insertAfter(对象2)：将对象2添加到对象1后边。对象1和对象2是兄弟关系
+        8. insertBefore()
+            * 对象1.insertBefore(对象2)： 将对象2添加到对象1前边。对象1和对象2是兄弟关系
+
+        9. remove():移除元素
+            * 对象.remove():将对象删除掉
+        10. empty():清空元素的所有后代元素。
+            * 对象.empty():将对象的后代元素全部清空，但是保留当前对象以及其属性节点</code></pre>
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/30/web数据库乱码编码/" >
-            
-                <span>web数据库乱码编码</span>
-        </a>
-        <div class="abstract-content">
-            web文本中的乱码问题问题简介：
-从数据库获取学生数据时，中文不会出现乱码。但是当增加数据的时候，会出现乱码。乱码全为？？？
-
-自我思考：
-中文乱码和但是英文，数学不会出现乱码。很大程度是字符集的编码问题。
-但是特殊的是：从数据库获取数据不会乱码。当web上增加数据时，就会出现乱码
-检查jsp, java， 数据库表的编码格式都是“utf-8”，这就很难受
-最后想到应该是数据库的问题，想到安装时。数据库默认的字符集时latin1,并没有修改
-于是修改一下，进行测试
-
-修改字符集
-1.
-2.
-问题最后解决了
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "编码问题">编码问题</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/28/NoClassDefFounfError/" >
-            
-                <span>NoClassDefFounfError</span>
-        </a>
-        <div class="abstract-content">
-            问题简介出现
-在开发一个登陆界面的web项目时，需要用户输入的账号和密码和数据存储的账号和密码做对比，来判断用户和密码是否正确。因此使用到了Druid连接池jar包
-写好了，数据库连接池的工具类，在单元测试中可以正确的运行，但是在web上运行是就会报错
-
-提示错误
-问题解决数据库连接池jar路径问题修改前：修改后：
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/css代码不恰当提示解决/" >
-            
-                <span>css代码不恰当提示解决</span>
-        </a>
-        <div class="abstract-content">
-            css设置web背景图遇见的问题问题
-提示信息
-解释检查发现相似的css内容，它能被简化形式
-问题解决修改代码后：
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/14/解决banner居中显示问题/" >
-            
-                <span>解决banner居中显示问题</span>
-        </a>
-        <div class="abstract-content">
-            
-地址：
-https://www.cnblogs.com/chenchenhao/p/9889628.html
-在做web界面时，出现了窗口缩放时，banner图片布局中的问题，在博客园找到了解决方法
-大家在做项目的时候有没有遇到一个问题呢    就是一张图片宽度100%    在缩放屏幕的时候图片会被压缩变形！！！那么怎么才能实现图片始终居中而不被压缩变形呢？  接下来让我带领大家解决这个问题   请看代码↓↓↓↓↓↓↓1234567891011121314151617181920212223242526272829303132&lt;style&gt;        .bannerb...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "css">css</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/09/网页轮播图/" >
-            
-                <span>网页轮播图</span>
-        </a>
-        <div class="abstract-content">
-            网页页面的轮播图
-1.setInterval(fun, time)
-
-fun为函数，time为毫秒
-
-
-2.使用document.getElementById()来获取body里的对象
-
-如：var img = document.getElementById()
-
-
-3.使用数组来存储图片的路径123456789101112131415161718192021222324252627&lt;body&gt;    &lt;img src="./images/1.jpg" id = "pic"&gt;    &lt;script&gt;        var imgArr = new Ar...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "JavaScript">JavaScript</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/08/html背景图自适应/" >
-            
-                <span>html背景图自适应</span>
-        </a>
-        <div class="abstract-content">
-            账号注册页面设计出现问题网页背景图片不能根据浏览器的变大而变大,会出现空白区12345body&#123;    background:url('./测试图片/1.jpeg');    background-repeat:no-repeat;    background-size:100% 100%&#125;
-
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hmtl">hmtl</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/04/坦克大战-第四天/" >
-            
-                <span>坦克大战-第四天</span>
-        </a>
-        <div class="abstract-content">
-            敌方坦克   1.增加了敌方坦克的随机运动和随机发射子弹,使用了Random类    2.在游戏窗口类中,新增一个成员变量为List enemyTanks = new Arraylist&lt;&gt;(),用于存放多个敌方坦克对象    3.增加了坦克越界的边界检查,如果坦克的位置出界就把位置赋值为老的位置
-123456789// 在Direction枚举对象中,增加随机方向的方法public enum Direction &#123;    UP, DOWN, LEFT, RIGHT;        private static Random rand = new Random();...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/02/坦克大战-第三天/" >
-            
-                <span>坦克大战-第三天</span>
-        </a>
-        <div class="abstract-content">
-            主要内容增加了按键控制坦克的方向
-监听键盘上下左右按键，进行控制坦克的运行123456789101112131415161718192021222324252627282930313233343536373839404142// 4):设置坦克方向private void setDirection() &#123;    if (!isU &amp;&amp; !isR &amp;&amp; !isL &amp;&amp; !isD) &#123;        isMoving = false;    &#125; else &#123;	isMoving = true;    &#1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/02</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/31/坦克大战-第二天/" >
-            
-                <span>坦克大战-第二天</span>
-        </a>
-        <div class="abstract-content">
-            坦克类的设计创建一个坦克的类
-考虑坦克的属性(位置、方向、速度)
-其中方向采用枚举（上、下、左、右）
-加载坦克的图片
-接受按键的触发，使坦克根据人的控制来动
-
-
-代码实现方向枚举123Enum Direction &#123;    UP, DOWN, LEFE, RIGHT&#125;
-
-图片资源类（例如坦克图片）12345678910111213public class ImagesResource &#123;    public static BufferedImage goodTankU, goodTankD, goodTankR, goodTankL;    static&#...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/08/30/web数据库乱码编码/" title= "web数据库乱码编码">
+                    <div class="prevTitle">web数据库乱码编码</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NTYyNS8yMjEzNg==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">NEXT &#62;</a>
-    </nav>
     
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -784,6 +698,24 @@ fun为函数，time为毫秒
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#知识点："><span class="toc-number">1.</span> <span class="toc-text">知识点：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JQuery-基础："><span class="toc-number">2.</span> <span class="toc-text">JQuery 基础：</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1097,6 +1029,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
