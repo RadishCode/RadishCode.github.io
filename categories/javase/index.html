@@ -346,230 +346,48 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/08/html背景图自适应/" >
+        <a class="abstract-title" href = "/2019/09/15/异常和线程/" >
             
-                <span>html背景图自适应</span>
+                <span>异常和线程</span>
         </a>
         <div class="abstract-content">
-            账号注册页面设计出现问题网页背景图片不能根据浏览器的变大而变大,会出现空白区12345body&#123;    background:url('./测试图片/1.jpeg');    background-repeat:no-repeat;    background-size:100% 100%&#125;
+            目标
+ 能够辨别程序中异常和错误的区别
+ 说出异常的分类
+ 说出虚拟机处理异常的方式
+ 列举出常见的三个运行期异常
+ 能够使用try…catch关键字处理异常
+ 能够使用throws关键字处理异常
+ 能够自定义异常类
+ 能够处理自定义异常类
+ 说出进程的概念
+ 说出线程的概念
+ 能够理解并发与并行的区别
+ 能够开启新线程
 
+第一章    异常1.1 异常概念异常，就是不正常的意思。在生活中:医生说,你的身体某个部位有异常,该部位和正常相比有点不同,该部位的功能将受影响.在程序中的意思就是：
 
+异常 ：指的是程序在执行过程中，出现的非正常的情况，最终会导致JVM的非正常停止。
 
+在Java...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/08</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/15</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "hmtl">hmtl</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "javase">javase</a>
     
 </div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/04/坦克大战-第四天/" >
-            
-                <span>坦克大战-第四天</span>
-        </a>
-        <div class="abstract-content">
-            敌方坦克   1.增加了敌方坦克的随机运动和随机发射子弹,使用了Random类    2.在游戏窗口类中,新增一个成员变量为List enemyTanks = new Arraylist&lt;&gt;(),用于存放多个敌方坦克对象    3.增加了坦克越界的边界检查,如果坦克的位置出界就把位置赋值为老的位置
-123456789// 在Direction枚举对象中,增加随机方向的方法public enum Direction &#123;    UP, DOWN, LEFT, RIGHT;        private static Random rand = new Random();...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/02/坦克大战-第三天/" >
-            
-                <span>坦克大战-第三天</span>
-        </a>
-        <div class="abstract-content">
-            主要内容增加了按键控制坦克的方向
-监听键盘上下左右按键，进行控制坦克的运行123456789101112131415161718192021222324252627282930313233343536373839404142// 4):设置坦克方向private void setDirection() &#123;    if (!isU &amp;&amp; !isR &amp;&amp; !isL &amp;&amp; !isD) &#123;        isMoving = false;    &#125; else &#123;	isMoving = true;    &#1...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/02</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/31/坦克大战-第二天/" >
-            
-                <span>坦克大战-第二天</span>
-        </a>
-        <div class="abstract-content">
-            坦克类的设计创建一个坦克的类
-考虑坦克的属性(位置、方向、速度)
-其中方向采用枚举（上、下、左、右）
-加载坦克的图片
-接受按键的触发，使坦克根据人的控制来动
-
-
-代码实现方向枚举123Enum Direction &#123;    UP, DOWN, LEFE, RIGHT&#125;
-
-图片资源类（例如坦克图片）12345678910111213public class ImagesResource &#123;    public static BufferedImage goodTankU, goodTankD, goodTankR, goodTankL;    static&#...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/31</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/坦克大战-第一天/" >
-            
-                <span>坦克大战-第一天</span>
-        </a>
-        <div class="abstract-content">
-            第一天创建一个游戏窗口
-新建一个GameFrame窗口类（单例设计模式）
-设置游戏窗口的属性（长、宽、高、背景颜色、位置等）
-给窗口一个画笔，进行绘制图形
-在窗口画一个图形进行测试
-将画笔交给坦克对象
-
-
-1234567891011121314151617181920212223242526// 游戏的窗口/*    1):向外暴露自己的实例对象    2):得到显卡的画笔*/public class GameFrame extends Frame &#123;    // 创建该类的私有化静态对象    private static final GameFrame instance =...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/30/坦克大战/" >
-            
-                <span>坦克大战</span>
-        </a>
-        <div class="abstract-content">
-            坦克大战项目的目的
-通过项目建立面向对象的设计思维，并复习OO，容器，网络、线程等基础知识
-
-资料
-1.阿里手册
-2.GUI(不需要深入掌握)
-
-
-项目安排
-1.做一个游戏窗口并显示
-
-
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/hello-world/" >
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-Mo...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
-            </div>
-            <!-- tags  -->
             
         </div>
     </article>
     
     <!-- paginator  -->
-    
-    <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2019/">&#60; PREV</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-    </nav>
     
 </main>
             <!-- profile -->
